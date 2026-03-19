@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Russo+One&display=swap');
+
+/* Super base */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', cursive;
+}
+
+/*carousel do header*/
+
+.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Navbar */
+
+.nav {
+    position: sticky;
+    z-index: 1030;
+}
+
+.link-navbar{
+    font-family:"Russo One", sans-serif;
+    font-size:1.1em;
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.link-navbar:hover{
+    color:rgb(178, 34, 34);
+    text-decoration:underline;
+}
