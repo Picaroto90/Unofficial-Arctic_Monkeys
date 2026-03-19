@@ -11,6 +11,10 @@ body {
     font-family: 'Montserrat', cursive;
 }
 
+h1, h2, h3, h4{
+    font-family: "Russo One", sans-serif;
+}
+
 /*carousel do header*/
 
 .carousel-item img {
@@ -19,6 +23,14 @@ body {
 }
 
 /* Navbar */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 .nav {
     position: sticky;
@@ -36,4 +48,47 @@ body {
 .link-navbar:hover{
     color:rgb(178, 34, 34);
     text-decoration:underline;
+}
+
+.margem-cabecalho{
+    margin-bottom:140px;
+}
+
+/* Footer */
+
+footer a{
+    color:whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color:rgb(178, 34, 34);
+}
+
+/* Jumbotrons do index.html */
+
+.std-btn{
+    background-color:rgb(178, 34, 34);
+    color:white;
+    transition:background-color 0.4s ease, color 0.4s ease;
+}
+
+.std-btn:hover{
+    background-color:whitesmoke;
+    color:rgb(178, 34, 34);
+}
+
+
+  /* Responsividade */
+
+@media (max-width:768px){
+    header .carousel{
+        display:none;
+    }
+
+    .link-navbar{
+        font-size:1em;
+    }
+
 }

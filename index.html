@@ -40,6 +40,9 @@
                 </div>
             </div>
         </header>
+        <button class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+        </button>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top">
             <ul class="navbar-nav list-unstyled align-items-center ps-5 gap-3 w-100">
                 <li class="nav-item"><a href="index.html" class="navbar-brand"><img src="imagens/arctic_monkeys_logo.png" alt="Logo" width="100"></a></li>
@@ -47,25 +50,58 @@
                 <li class="nav-item"><a href="sobre.html" class="link-navbar">SOBRE</a></li>
                 <li class="nav-item"><a href="albuns.html" class="link-navbar">ALBUNS</a></li>
                 <li class="nav-item"><a href="tour.html" class="link-navbar">TOUR</a></li>
-                <li class="nav-item ms-auto me-5"><a href="contactos.html" class="link-navbar">CONTACTOS</a></li>
+                <li class="nav-item"><a href="contactos.html" class="link-navbar">CONTACTOS</a></li>
             </ul>
         </nav>
         
-        <main class="container">
-            <p>Teste de tipo de letra dentro de uma tag de paragrafo</p>
-            <div style="width:300px; height:1000px;">erqgloewntbhnwieprqmwfociqmwpegeinveqvRWEJGEVOJRV OEQ WVO</div>
-            
+        <main>
+            <section id="sobre" class="container mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="p-5 mb-4 bg-dark rounded-3" style="background-image: url(imagens/flag_dark.webp); background-size: cover; background-position: center;">
+                            <div class="container-fluid py-5">
+                                <h1 class="display-5 fw-bold">Arctic Monkeys</h1>
+                                <p class="col-md-8 fs-5">Arctic Monkeys é uma banda britânica de rock formada em 2002 nos subúrbios da cidade de Sheffield, na Inglaterra.</p>
+                                <a href="sobre.html"><button class="btn std-btn btn-lg" type="button">Vem conhecer a banda</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="trabalhos" class="container my-1">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="p-5 mb-4 bg-dark rounded-3" style="background-image:url(imagens/AMLP.webp); background-size:cover;">
+                            <div class="container-fluid py-5">
+                                <h1 class="display-5 fw-bold">Discografia</h1>
+                                <p class="col-md-8 fs-5">Conhece aqui toda a discografia da banda.</p>
+                                <a href="albuns.html"><button class="btn std-btn btn-lg" type="button">Toda a discografia</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="p-5 mb-4 rounded-3" style="background-image:url(imagens/concerto.jpeg);">
+                            <div class="container-fluid py-5">
+                                <h1 class="display-5 fw-bold">Digressão</h1>
+                                <p class="col-md-8 fs-5">Não fiques de fora dos próximos eventos!</p>
+                                <a href="tour.html"><button class="btn std-btn btn-lg" type="button">Agenda</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer class="bg-dark text-white">
+        <footer class="bg-dark text-white pt-3">
             <div class="container-fluid text-center">
                 <div class="flex-row">
                     <nav class="col-12">
                         <ul class="list-unstyled d-flex justify-content-center gap-4">
-                            <li><a href="mailto:games_place@mail.com" aria-label="Enviar email"  class="navbar-brand"><i class='fas fa-envelope'></i></a></li>
-                            <li><a href="https://www.facebook.com/" aria-label="Facebook"  class="navbar-brand"><i class='fab fa-facebook'></i></a></li>
-                            <li><a href="https://www.instagram.com/" aria-label="Instagram"  class="navbar-brand"><i class='fab fa-instagram'></i></a></li>
-                            <li><a href="https://wa.me/912345678" aria-label="Contacto telefónico"  class="navbar-brand"><i class="fas fa-phone"></i></a></li>
+                            <li><a href="mailto:games_place@mail.com" aria-label="Enviar email"><i class='fas fa-envelope'></i></a></li>
+                            <li><a href="https://www.facebook.com/" aria-label="Facebook" ><i class='fab fa-facebook'></i></a></li>
+                            <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class='fab fa-instagram'></i></a></li>
+                            <li><a href="https://wa.me/912345678" aria-label="Contacto telefónico"><i class="fas fa-phone"></i></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -75,9 +111,9 @@
                     <div class="col-12 d-inline-flex justify-content-center">
                         <p>&copy; Artic Monkeys </p>
                         <i class="px-2"> | </i>
-                        <a href="#"  class="text-white text-decoration-none">Política de Privacidade </a>
+                        <a href="#">Política de Privacidade </a>
                         <i class="px-2"> | </i>
-                        <a href="#"  class="text-white text-decoration-none">Termos de uso</a>
+                        <a href="#">Termos de uso</a>
                     </div>
                 </div>
             </div>
