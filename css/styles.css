@@ -24,19 +24,6 @@ h1, h2, h3, h4{
 
 /* Navbar */
 
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.nav {
-    position: sticky;
-    z-index: 1030;
-}
-
 .link-navbar{
     font-family:"Russo One", sans-serif;
     font-size:1.1em;
@@ -51,8 +38,9 @@ h1, h2, h3, h4{
 }
 
 .margem-cabecalho{
-    margin-bottom:140px;
+    margin-bottom:80px;
 }
+
 
 /* Footer */
 
@@ -80,9 +68,10 @@ footer a:hover{
 }
 
 
-  /* Responsividade */
+/* Responsividade */
 
 @media (max-width:768px){
+
     header .carousel{
         display:none;
     }
@@ -91,4 +80,29 @@ footer a:hover{
         font-size:1em;
     }
 
+    .logo{
+        display:flex;
+        justify-content:center;
+    }
+
+    #navegacao nav{
+        display:inline-flex;
+        justify-content:center;
+        width:100%;
+    }
+
+    .nav-redes{
+        display:inline-flex;
+        justify-content:center;
+        width:100%;
+        margin-top: 1.5em;
+    }
+
+    #navegacao ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    }
 }
