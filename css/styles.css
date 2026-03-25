@@ -105,4 +105,8 @@ footer a:hover{
     align-items:center;
     gap:10px;
     }
+
+    .termos{
+        font-size:0.5em;
+    }
 }
