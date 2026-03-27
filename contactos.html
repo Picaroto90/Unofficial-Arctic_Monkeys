@@ -13,7 +13,7 @@
 
     <body class="text-bg-secondary">
 
-        <header class="margem-cabecalho">
+        <header class="margem-cabecalho sticky-top">
             <section id="navegacao" class="container-fluid bg-dark  sticky-top">
                 <div class="container">    
                     <div class="row align-items-center">
@@ -45,8 +45,56 @@
         </header>
         
         <main class="container">
-            <p>Teste de tipo de letra dentro de uma tag de paragrafo</p>
-            <div style="width:300px; height:1000px;">erqgloewntbhnwieprqmwfociqmwpegeinveqvRWEJGEVOJRV OEQ WVO</div>
+            
+            <h2 class="mb-5 pb-3">ENVIA UMA MENSAGEM</h2>
+
+            <section id="formulario" class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-7 bg-dark p-3 mb-3">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="nome" class="form-label">NOME</label>
+                                    <input type="text" class="form-control bg-secondary text-white" id="nome" placeholder="Nome" required>
+                                    <div class="invalid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="apelido" class="form-label">APELIDO</label>
+                                    <input type="text" class="form-control text-bg-secondary" id="apelido" placeholder="Apelido" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 col-lg-4 mb-3">
+                                    <label for="nascimento" class="form-label">DATA DE NASCIMENTO</label>
+                                    <input type="date" class="form-control bg-secondary text-white" id="nascimento" required>
+                                </div>
+                                <div class="col-12 offset-lg-2 col-lg-6">
+                                    <label for="telefone" class="form-label">TELEFONE</label>
+                                    <input type="tel" class="form-control bg-secondary text-white" id="telefone" placeholder="912345678" required> 
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 mb-3">
+                                    <label for="email" class="form-label">EMAIL</label>
+                                    <input type="email" class="form-control bg-secondary text-white" id="email" placeholder="exemplo@exemplo.com" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 mb-3">
+                                    <label for="mensagem" class="form-label">MENSAGEM</label>
+                                    <textarea id="mensagem" class="form-control bg-secondary text-white" rows="4" placeholder="Escreve aqui a tua mensagem" required></textarea>
+                                </div>
+                            </div>
+                            <button class="btn std-btn btn-lg" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-5 bg-dark pt-4 mb-3">
+                        <img src="imagens/logo_am.png" alt="logo_am" class="img-fluid">
+                    </div>
+                </div>
+            </section>
             
         </main>
 
