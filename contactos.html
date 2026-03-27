@@ -51,40 +51,55 @@
             <section id="formulario" class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-7 bg-dark p-3 mb-3">
-                        <form>
+                        <form id="formContacto" novalidate>
                             <div class="row mb-3">
                                 <div class="col-12 col-lg-6 mb-3">
                                     <label for="nome" class="form-label">NOME</label>
                                     <input type="text" class="form-control bg-secondary text-white" id="nome" placeholder="Nome" required>
                                     <div class="invalid-feedback">
-                                        Looks good!
+                                        Campo obrigatório
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <label for="apelido" class="form-label">APELIDO</label>
                                     <input type="text" class="form-control text-bg-secondary" id="apelido" placeholder="Apelido" required>
+                                    <div class="invalid-feedback">
+                                        Campo obrigatório
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-12 col-lg-4 mb-3">
                                     <label for="nascimento" class="form-label">DATA DE NASCIMENTO</label>
                                     <input type="date" class="form-control bg-secondary text-white" id="nascimento" required>
+                                    <div class="invalid-feedback">
+                                        Campo obrigatório
+                                    </div>
                                 </div>
                                 <div class="col-12 offset-lg-2 col-lg-6">
                                     <label for="telefone" class="form-label">TELEFONE</label>
-                                    <input type="tel" class="form-control bg-secondary text-white" id="telefone" placeholder="912345678" required> 
+                                    <input type="tel" class="form-control bg-secondary text-white" id="telefone" pattern="[0-9]{9}" placeholder="912345678" required> 
+                                    <div class="invalid-feedback">
+                                        Introduz um número válido (9 dígitos)
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-12 mb-3">
                                     <label for="email" class="form-label">EMAIL</label>
                                     <input type="email" class="form-control bg-secondary text-white" id="email" placeholder="exemplo@exemplo.com" required>
+                                    <div class="invalid-feedback">
+                                        Campo obrigatório
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-12 mb-3">
                                     <label for="mensagem" class="form-label">MENSAGEM</label>
                                     <textarea id="mensagem" class="form-control bg-secondary text-white" rows="4" placeholder="Escreve aqui a tua mensagem" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Campo obrigatório
+                                    </div>
                                 </div>
                             </div>
                             <button class="btn std-btn btn-lg" type="submit">Enviar</button>
@@ -126,5 +141,20 @@
         </footer>
         <!-- Scripts JavaScript do Bootstrap via CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            const form = document.getElementById("formContacto");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                if (form.checkValidity()) {
+                    alert("Mensagem enviada com sucesso!");
+                    form.reset();
+                    form.classList.remove("was-validated");
+                } else {
+                    form.classList.add("was-validated");
+                }
+            });
+        </script>
     </body>
 </html>

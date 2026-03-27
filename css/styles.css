@@ -58,6 +58,7 @@ form placeholder{
     box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
 }
 
+
 /* Footer */
 
 footer a{
@@ -83,6 +84,11 @@ footer a:hover{
     color:rgb(178, 34, 34);
 }
 
+/* Cards */
+
+.card-title{
+    font-family:"Montserrat", sans-serif;
+}
 
 /* Responsividade */
 
